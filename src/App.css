@@ -105,8 +105,8 @@ animation:move-clouds-back 200s linear infinite;
 }
 
 .heart {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 .heart-div {
   display: flex;
@@ -153,9 +153,18 @@ img
 }
 #name {
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.8rem;
   top: calc(100vh/2);
   color: blue;
+}
+
+@media (max-width:400px){
+  #name {
+    position: absolute;
+    font-size: 1.8rem;
+    top: calc(100vh/2 - 20px);
+    color: blue;
+  }
 }
 
 #author {
