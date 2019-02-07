@@ -103,3 +103,85 @@ animation:move-twink-back 200s linear infinite;
 -webkit-animation:move-clouds-back 200s linear infinite;
 animation:move-clouds-back 200s linear infinite;
 }
+
+.heart {
+  width: 400px;
+  height: 400px;
+}
+.heart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+img
+{
+  animation: heartbeat 2s infinite;
+}
+#pre-text {
+  position: absolute;
+  color: pink;
+  top: calc(100vh/2 - 40px);
+}
+#name {
+  position: absolute;
+  top: calc(100vh/2);
+  color: blue;
+}
+
+#author {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  color: white;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation: pulse 1s infinite;
+}
