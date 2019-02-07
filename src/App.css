@@ -191,7 +191,7 @@ img
   }
 }
 
-.pulse {
+.pulse1 {
   -webkit-animation-name: pulse;
   animation: pulse 1s infinite;
 }
