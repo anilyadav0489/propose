@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import heart from './heart.png';
+import happyBirthday from './happyBirthday.jpg';
+import curtains from './curtains.jpg';
 
 class App extends Component {
   name = 'Angel'
@@ -24,12 +25,11 @@ class App extends Component {
       <div className="App">
         <div className="stars"></div>
         <div className="twinkling heart-div">
-          <img src={heart} className="heart" alt=""></img>
-          <label id="pre-text">I love you my</label>
-          <label id="name" className="pulse">{nameToDisplay}</label>
+          <img src={happyBirthday} className="birthday" alt=""></img>
+          <img src={curtains} className="curtains" alt=""></img>
         </div>
-        <div className="clouds"></div>
-        <div id="author">Created by Anil Yadav</div>
+        <div>
+        </div>
       </div>
     );
   }

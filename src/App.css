@@ -142,52 +142,26 @@ animation:move-clouds-back 200s linear infinite;
   }
 }
 
-img
-{
-  animation: heartbeat 2s infinite;
+.birthday {
+  height: 100vh;
 }
-#pre-text {
+.curtains {
   position: absolute;
-  color: pink;
-  top: calc(100vh/2 - 40px);
-}
-#name {
-  position: absolute;
-  font-size: 1.8rem;
-  top: calc(100vh/2);
-  color: blue;
+  animation: moveUp 15s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
-@media (max-width:400px){
-  #name {
-    position: absolute;
-    font-size: 1.8rem;
-    top: calc(100vh/2 - 20px);
-    color: blue;
-  }
-}
 
-#author {
-  position: fixed;
-  bottom: 20px;
-  right: 50px;
-  color: white;
-}
 
-@keyframes pulse {
+@keyframes moveUp {
   from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.5, 1.5, 1.5);
+    top:0px;
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    top:-1300px;
   }
 }
 
