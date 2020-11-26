@@ -6,6 +6,12 @@ https://mkrtchyan.ga
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 header {
   background-color:rgba(33, 33, 33, 0.9);
@@ -30,6 +36,111 @@ header h2{
 header a, a:visited {
   text-decoration:none;
   color:#fcfcfc;
+}
+
+.progress-bar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 1%;
+  background-color: blue;
+}
+.image-count{
+  position: fixed;
+  color: rgba(255, 255, 255, 0.4);
+  right: 10px;
+  top: 5px;
+}
+.image-count:hover{
+  color: rgba(255, 255, 255, 1);
+}
+.right-arror-container{
+  position: fixed;
+  right: -3rem;
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid white;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: transform 500ms;
+  cursor: pointer;
+  animation: fade-in-out 5000ms linear 10ms infinite forwards;
+}
+
+.right-arror-container:hover{
+  transform: scale(1.3);
+  transition: transform 500ms;
+}
+
+.right-arrow{
+  position: relative;
+  top: 2rem;
+  left: 0.7rem;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(45deg);
+}
+
+
+
+.left-arrow-container{
+  position: fixed;
+  left: -3rem;
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid white;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: transform 500ms;
+  cursor: pointer;
+  animation: fade-in-out 5000ms linear 10ms infinite forwards;
+}
+
+
+.left-arrow-container:hover{
+  transform: scale(1.3);
+  transition: transform 500ms;
+}
+
+.left-arrow{
+  position: relative;
+  top: 2rem;
+  left: 03.5rem;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(-135deg);
+
+}
+
+.photoframe{
+  padding: 1rem;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.restart-button{
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  border-radius: 15px;
+  width: 4rem;
+  height: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: 3px solid yellow;
+  z-index: 6;
+}
+
+@keyframes fade-in-out {
+  0% {opacity: 0.4;}
+  50% {opacity: 1;}
+  100% {opacity: 0.4;}
 }
 
 @keyframes move-twink-back {
